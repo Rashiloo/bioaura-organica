@@ -1,57 +1,16 @@
+
+/* ===== Contacto y Políticas de Seguridad (Integrante 3) ===== */
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    const filterButtons = document.querySelectorAll('.btn-filter');
-    const productCards = document.querySelectorAll('.product-card');
-
-    if (filterButtons.length > 0) {
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                const category = button.getAttribute('data-category');
-
-                productCards.forEach(card => {
-                    if (category === 'todos' || card.getAttribute('data-category') === category) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-    }
-
-    const buyButtons = document.querySelectorAll('.btn-buy');
-    buyButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const productName = e.target.getAttribute('data-name');
-            alert(`¡${productName} ha sido añadido a tu lista de deseos!`);
-        });
-    });
-
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-    }
-
+    // --- Formulario de contacto ---
     const form = document.getElementById('contact-form');
 
     if (form) {
         const status = document.getElementById('form-status');
         const mensaje = document.getElementById('mensaje');
         const counter = document.getElementById('char-counter');
-        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
+        // Cada validador devuelve '' si es válido o el texto del error
         const validators = {
             nombre: (f) => f.nombre.value.trim().length >= 3 ? '' : 'Ingresa tu nombre (mínimo 3 caracteres).',
             correo: (f) => emailRegex.test(f.correo.value.trim()) ? '' : 'Ingresa un correo electrónico válido.',
@@ -73,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return text === '';
         };
 
+        // Validación en tiempo real al salir de cada campo
         Object.keys(validators).forEach((name) => {
             const field = form.elements[name];
             field.addEventListener('blur', () => validateField(name));
@@ -83,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+        // Contador de caracteres
         mensaje.addEventListener('input', () => {
             counter.textContent = `${mensaje.value.length} / ${mensaje.maxLength}`;
         });
@@ -106,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            // Simulación de envío (sin backend en este proyecto académico)
             const nombre = form.nombre.value.trim().split(' ')[0];
             status.textContent = `¡Gracias, ${nombre}! Tu mensaje fue enviado. Te responderemos pronto.`;
             status.classList.add('success');
@@ -114,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Acordeón de políticas: solo un apartado abierto a la vez ---
     const policyItems = document.querySelectorAll('.policy-item');
     policyItems.forEach((item) => {
         item.addEventListener('toggle', () => {

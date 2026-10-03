@@ -343,3 +343,198 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* --- Sección Contacto --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    align-items: start;
+}
+
+.contact-info {
+    background-color: #f4f8f1;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.9rem;
+}
+
+.contact-list a,
+.form-check a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-icon {
+    margin-right: 0.4rem;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    padding: 0.7rem 0.9rem;
+    border: 1.5px solid #d4d9d2;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+    border-color: var(--error-color);
+}
+
+.error-msg {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    min-height: 1.1rem;
+    margin-top: 0.25rem;
+}
+
+.char-counter {
+    align-self: flex-end;
+    color: var(--gray-text);
+    font-size: 0.8rem;
+}
+
+.form-check {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-check label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.form-check .error-msg {
+    flex-basis: 100%;
+}
+
+.form-status {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.form-status.success {
+    color: var(--success-color);
+}
+
+.form-status.error {
+    color: var(--error-color);
+}
+
+/* --- Sección Políticas --- */
+.policy-list {
+    max-width: 800px;
+    margin: 2.5rem auto 0;
+}
+
+.policy-item {
+    background-color: #ffffff;
+    border: 1px solid #e3e7e1;
+    border-radius: 10px;
+    margin-bottom: 0.9rem;
+    overflow: hidden;
+}
+
+.policy-item summary {
+    cursor: pointer;
+    padding: 1rem 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    list-style: none;
+    position: relative;
+}
+
+.policy-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.policy-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.policy-item[open] summary::after {
+    content: "−";
+}
+
+.policy-item summary:hover {
+    background-color: #f4f8f1;
+}
+
+.policy-body {
+    padding: 0 1.3rem 1.2rem;
+    color: var(--dark-text);
+}
+
+.policy-body p {
+    margin-top: 0.7rem;
+}
+
+.policy-update {
+    margin-top: 1.5rem;
+    color: var(--gray-text);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .contact-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
