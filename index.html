@@ -31,28 +31,116 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 2: ¿Quiénes Somos? (Integrante 2 colocará su código aquí) -->
+        <!-- SECCIÓN 2: ¿Quiénes Somos? (Integrante 2) -->
         <section id="quienes-somos" class="section">
             <div class="container" id="contenedor-quienes-somos">
-                <!-- Código a desarrollar en rama feature/brand-story-and-products -->
+                <div class ="about-grid">
+                    <div class ="about-text">
+                        <h2 class="section-title">Nuestra Historia y Filosofía</h2>
+                        <br>
+                        <p>En<strong> BioAura </strong> creemos que la verdadera belleza proviene de la armonía con la naturaleza. Tenemos el propósito de ofrecer una alternativa consciente, libre de ingredientes sintéticos y respetuosa con el medio ambiente.</p>
+                        <p>Todos nuestros productos son elaborados artesanalmente con extractos botánicos puros, aceites esenciales de primera extracción y envases 100% reciclables.</p>
+                        <div class="about-badges">
+                            <span class="badge">🌿 100% Orgánico</span>
+                            <span class="badge">🐰 Cruelty Free</span>
+                            <span class="badge">♻️ Zero Waste</span>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Ingredientes orgánicos BioAura" class="img-responsive">
+                    </div> 
+                </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 3: Productos / Servicios (Integrante 2 colocará su código aquí) -->
+        <!-- SECCIÓN 3: Productos / Servicios (Integrante 2) -->
         <section id="productos" class="section bg-light">
             <div class="container" id="contenedor-productos">
-                <!-- Código a desarrollar en rama feature/brand-story-and-products -->
+                <h2 class="section-title text-center">Nuestra Colección Orgánica</h2>
+                <p class="section-subtitle text-center">Formulados sin parabenos, sulfatos ni fragancias artificiales.</p>
+
+                <!-- Filtros dinámicos -->
+                <div class="filter-buttons">
+                    <button class="btn-filter active" data-category="todos">Todos</button>
+                    <button class="btn-filter" data-category="facial">Cuidado Facial</button>
+                    <button class="btn-filter" data-category="corporal">Cuidado Corporal</button>
+                    <button class="btn-filter" data-category="maquillaje">Maquillaje Ecológico</button>
+                </div>
+
+                <!-- Grid de Productos -->
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card" data-category="facial">
+                        <div class="product-img">
+                            <img src="https://valchini.com/cdn/shop/files/suero-facial-antioxidante-fotosintesis-30ml-3212337.jpg?v=1778157127&width=1920" alt="Sérum Facial Botánico">
+                            <span class="tag">Top Ventas</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sérum Facial Antioxidante</h3>
+                            <p>Sérum con aceite de rosa mosqueta y vitamina C natural que revitaliza la piel.</p>
+                            <div class="product-bottom">
+                                <span class="price">$380 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Sérum Facial Antioxidante">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card" data-category="corporal">
+                        <div class="product-img">
+                            <img src="https://botanicus.com.mx/cdn/shop/files/jabon-artesanal-lavanda-avena-calm-bar-5.jpg?v=1786976281&width=1000" alt="Jabón Artesanal de Lavanda">
+                        </div>
+                        <div class="product-info">
+                            <h3>Jabón Artesanal Lavanda & Avena</h3>
+                            <p>Limpieza suave y exfoliación ligera para pieles sensibles con manteca de karité.</p>
+                            <div class="product-bottom">
+                                <span class="price">$120 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Jabón Artesanal Lavanda & Avena">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card" data-category="maquillaje">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Bálsamo Labial con Color">
+                        </div>
+                        <div class="product-info">
+                            <h3>Bálsamo Labial Ecológico</h3>
+                            <p>Nutrición intensa con aceite de coco y pigmentos minerales biodegradables.</p>
+                            <div class="product-bottom">
+                                <span class="price">$150 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Bálsamo Labial Ecológico">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="product-card" data-category="facial">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Crema Facial Hidratante">
+                        </div>
+                        <div class="product-info">
+                            <h3>Crema Hidratante de Manzanilla</h3>
+                            <p>Calma y regenera la piel cansada con extracto puro de manzanilla y aloe vera.</p>
+                            <div class="product-bottom">
+                                <span class="price">$290 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Crema Hidratante de Manzanilla">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 4: Contacto (Integrante 3 colocará su código aquí) -->
+        <!-- SECCIÓN 4: Contacto (Integrante 3) -->
         <section id="contacto" class="section">
             <div class="container" id="contenedor-contacto">
                 <!-- Código a desarrollar en rama feature/contact-and-security-policy -->
             </div>
         </section>
 
-        <!-- SECCIÓN 5: Políticas de Seguridad (Integrante 3 colocará su código aquí) -->
+        <!-- SECCIÓN 5: Políticas de Seguridad (Integrante 3) -->
         <section id="politicas" class="section bg-light">
             <div class="container" id="contenedor-politicas">
     </main>
