@@ -1,210 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BioAura Orgánica</title>
-    <meta
-      name="description"
-      content="BioAura Orgánica - contacto y políticas de seguridad"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="page-shell">
-      <section class="hero">
-        <div class="container">
-          <p class="eyebrow">BioAura Orgánica</p>
-          <h1>Bienestar natural para tu día a día</h1>
-          <p class="hero-copy">
-            Productos orgánicos, con intención y cuidado para una vida más sana.
-          </p>
-        </div>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioAura Orgánica - Belleza Natural y Cuidado Ecológico</title>
+    <meta name="description" content="BioAura Orgánica - catálogo, contacto y políticas de seguridad">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-      <section id="contacto" class="section">
-        <div class="container" id="contenedor-contacto">
-          <h2 class="section-title text-center">Contáctanos</h2>
-          <p class="section-subtitle text-center">
-            ¿Dudas sobre un producto o tu pedido? Escríbenos y te respondemos en
-            menos de 24 horas.
-          </p>
+    <header class="header">
+        <div class="logo">BioAura<span>.</span></div>
+        <nav class="nav" id="nav-menu">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#quienes-somos" class="nav-link">¿Quiénes Somos?</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <a href="#politicas" class="nav-link">Seguridad</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menú">&#9776;</button>
+    </header>
 
-          <div class="contact-grid">
-            <div class="contact-info">
-              <h3>Datos de contacto</h3>
-              <ul class="contact-list">
-                <li>
-                  <span class="contact-icon" aria-hidden="true">📍</span>
-                  Av. Jardín Botánico 123, Col. Centro, Xalapa, Veracruz, México
-                </li>
-                <li>
-                  <span class="contact-icon" aria-hidden="true">📞</span>
-                  <a href="tel:+525555550123">+52 55 5555 0123</a>
-                </li>
-                <li>
-                  <span class="contact-icon" aria-hidden="true">✉️</span>
-                  <a href="mailto:contacto@bioauraorganica.mx">contacto@bioauraorganica.mx</a>
-                </li>
-                <li>
-                  <span class="contact-icon" aria-hidden="true">🕒</span>
-                  Lunes a viernes, 9:00 a 18:00 h
-                </li>
-                <li>
-                  <span class="contact-icon" aria-hidden="true">📷</span>
-                  Instagram: @bioaura.organica
-                </li>
-              </ul>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Siente el Poder de la Naturaleza en tu Piel</h1>
+                <p>Cosméticos 100% orgánicos, libres de parabenos y elaborados de manera sustentable con ingredientes botánicos de la más alta calidad.</p>
+                <a href="#productos" class="btn-primary">Descubrir Productos</a>
             </div>
+        </section>
 
-            <form id="contact-form" class="contact-form" novalidate>
-              <div class="form-group">
-                <label for="nombre">Nombre completo</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Ej. María López"
-                  autocomplete="name"
-                />
-                <span class="error-msg" id="error-nombre" role="alert"></span>
-              </div>
+        <section id="quienes-somos" class="section">
+            <div class="container" id="contenedor-quienes-somos">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title">Nuestra Historia y Filosofía</h2>
+                        <br>
+                        <p>En<strong> BioAura </strong>creemos que la verdadera belleza proviene de la armonía con la naturaleza. Tenemos el propósito de ofrecer una alternativa consciente, libre de ingredientes sintéticos y respetuosa con el medio ambiente.</p>
+                        <p>Todos nuestros productos son elaborados artesanalmente con extractos botánicos puros, aceites esenciales de primera extracción y envases 100% reciclables.</p>
+                        <div class="about-badges">
+                            <span class="badge">🌿 100% Orgánico</span>
+                            <span class="badge">🐰 Cruelty Free</span>
+                            <span class="badge">♻️ Zero Waste</span>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Ingredientes orgánicos BioAura" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-              <div class="form-group">
-                <label for="correo">Correo electrónico</label>
-                <input
-                  type="email"
-                  id="correo"
-                  name="correo"
-                  placeholder="correo@ejemplo.com"
-                  autocomplete="email"
-                />
-                <span class="error-msg" id="error-correo" role="alert"></span>
-              </div>
+        <section id="productos" class="section bg-light">
+            <div class="container" id="contenedor-productos">
+                <h2 class="section-title text-center">Nuestra Colección Orgánica</h2>
+                <p class="section-subtitle text-center">Formulados sin parabenos, sulfatos ni fragancias artificiales.</p>
 
-              <div class="form-group">
-                <label for="asunto">Asunto</label>
-                <select id="asunto" name="asunto">
-                  <option value="">Selecciona una opción</option>
-                  <option value="producto">Información de un producto</option>
-                  <option value="pedido">Estado de mi pedido</option>
-                  <option value="devolucion">Devoluciones y cambios</option>
-                  <option value="otro">Otro</option>
-                </select>
-                <span class="error-msg" id="error-asunto" role="alert"></span>
-              </div>
+                <div class="filter-buttons">
+                    <button class="btn-filter active" data-category="todos">Todos</button>
+                    <button class="btn-filter" data-category="facial">Cuidado Facial</button>
+                    <button class="btn-filter" data-category="corporal">Cuidado Corporal</button>
+                    <button class="btn-filter" data-category="maquillaje">Maquillaje Ecológico</button>
+                </div>
 
-              <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="5"
-                  maxlength="500"
-                  placeholder="Cuéntanos en qué podemos ayudarte"
-                ></textarea>
-                <small class="char-counter" id="char-counter">0 / 500</small>
-                <span class="error-msg" id="error-mensaje" role="alert"></span>
-              </div>
+                <div class="products-grid">
+                    <article class="product-card" data-category="facial">
+                        <div class="product-img">
+                            <img src="https://valchini.com/cdn/shop/files/suero-facial-antioxidante-fotosintesis-30ml-3212337.jpg?v=1778157127&width=1920" alt="Sérum Facial Botánico">
+                            <span class="tag">Top Ventas</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sérum Facial Antioxidante</h3>
+                            <p>Sérum con aceite de rosa mosqueta y vitamina C natural que revitaliza la piel.</p>
+                            <div class="product-bottom">
+                                <span class="price">$380 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Sérum Facial Antioxidante">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
 
-              <div class="form-group form-check">
-                <input type="checkbox" id="privacidad" name="privacidad" />
-                <label for="privacidad">
-                  Acepto el <a href="#politicas">aviso de privacidad</a>.
-                </label>
-                <span class="error-msg" id="error-privacidad" role="alert"></span>
-              </div>
+                    <article class="product-card" data-category="corporal">
+                        <div class="product-img">
+                            <img src="https://botanicus.com.mx/cdn/shop/files/jabon-artesanal-lavanda-avena-calm-bar-5.jpg?v=1786976281&width=1000" alt="Jabón Artesanal de Lavanda">
+                        </div>
+                        <div class="product-info">
+                            <h3>Jabón Artesanal Lavanda & Avena</h3>
+                            <p>Limpieza suave y exfoliación ligera para pieles sensibles con manteca de karité.</p>
+                            <div class="product-bottom">
+                                <span class="price">$120 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Jabón Artesanal Lavanda & Avena">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
 
-              <button type="submit" class="btn-primary">Enviar mensaje</button>
-              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-        </div>
-      </section>
+                    <article class="product-card" data-category="maquillaje">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Bálsamo Labial con Color">
+                        </div>
+                        <div class="product-info">
+                            <h3>Bálsamo Labial Ecológico</h3>
+                            <p>Nutrición intensa con aceite de coco y pigmentos minerales biodegradables.</p>
+                            <div class="product-bottom">
+                                <span class="price">$150 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Bálsamo Labial Ecológico">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
 
-      <section id="politicas" class="section bg-light">
-        <div class="container" id="contenedor-politicas">
-          <h2 class="section-title text-center">Políticas de Seguridad</h2>
-          <p class="section-subtitle text-center">
-            Tu confianza es lo más importante. Así protegemos tu información y tus
-            compras.
-          </p>
+                    <article class="product-card" data-category="facial">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Crema Facial Hidratante">
+                        </div>
+                        <div class="product-info">
+                            <h3>Crema Hidratante de Manzanilla</h3>
+                            <p>Calma y regenera la piel cansada con extracto puro de manzanilla y aloe vera.</p>
+                            <div class="product-bottom">
+                                <span class="price">$290 MXN</span>
+                                <button class="btn-secondary btn-buy" data-name="Crema Hidratante de Manzanilla">Añadir</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-          <div class="policy-list">
-            <details class="policy-item">
-              <summary>🔒 Aviso de privacidad y protección de datos</summary>
-              <div class="policy-body">
-                <p>
-                  BioAura Orgánica recaba únicamente los datos necesarios (nombre,
-                  correo y mensaje) para atender tus solicitudes. No vendemos ni
-                  compartimos tu información con terceros sin tu consentimiento,
-                  conforme a la Ley Federal de Protección de Datos Personales en
-                  Posesión de los Particulares.
+        <section id="contacto" class="section">
+            <div class="container" id="contenedor-contacto">
+                <h2 class="section-title text-center">Contáctanos</h2>
+                <p class="section-subtitle text-center">
+                    ¿Dudas sobre un producto o tu pedido? Escríbenos y te respondemos en menos de 24 horas.
                 </p>
-                <p>
-                  Puedes ejercer tus derechos de acceso, rectificación,
-                  cancelación y oposición (ARCO) escribiendo a
-                  <strong>privacidad@bioauraorganica.mx</strong>.
-                </p>
-              </div>
-            </details>
 
-            <details class="policy-item">
-              <summary>🍪 Política de cookies</summary>
-              <div class="policy-body">
-                <p>
-                  Usamos cookies técnicas para que el sitio funcione correctamente y
-                  cookies analíticas para entender cómo se usa la página y mejorarla.
-                  Puedes desactivarlas desde la configuración de tu navegador sin
-                  afectar la navegación básica.
-                </p>
-              </div>
-            </details>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Datos de contacto</h3>
+                        <ul class="contact-list">
+                            <li><span class="contact-icon" aria-hidden="true">📍</span>Av. Jardín Botánico 123, Col. Centro, Xalapa, Veracruz, México</li>
+                            <li><span class="contact-icon" aria-hidden="true">📞</span><a href="tel:+525555550123">+52 55 5555 0123</a></li>
+                            <li><span class="contact-icon" aria-hidden="true">✉️</span><a href="mailto:contacto@bioauraorganica.mx">contacto@bioauraorganica.mx</a></li>
+                            <li><span class="contact-icon" aria-hidden="true">🕒</span>Lunes a viernes, 9:00 a 18:00 h</li>
+                            <li><span class="contact-icon" aria-hidden="true">📷</span>Instagram: @bioaura.organica</li>
+                        </ul>
+                    </div>
 
-            <details class="policy-item">
-              <summary>💳 Pagos seguros</summary>
-              <div class="policy-body">
-                <p>
-                  Las transacciones se procesan mediante conexiones cifradas (HTTPS/TLS)
-                  a través de pasarelas de pago certificadas. BioAura no almacena los
-                  datos de tu tarjeta en sus servidores.
-                </p>
-              </div>
-            </details>
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. María López" autocomplete="name">
+                            <span class="error-msg" id="error-nombre" role="alert"></span>
+                        </div>
 
-            <details class="policy-item">
-              <summary>📦 Envíos, devoluciones y garantía</summary>
-              <div class="policy-body">
-                <p>
-                  Los pedidos se envían en un plazo de 2 a 5 días hábiles. Si el
-                  producto llega dañado o no es lo que pediste, puedes solicitar cambio o
-                  reembolso dentro de los 10 días posteriores a la entrega, con el
-                  producto sin abrir (salvo defecto de fábrica).
-                </p>
-              </div>
-            </details>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" autocomplete="email">
+                            <span class="error-msg" id="error-correo" role="alert"></span>
+                        </div>
 
-            <details class="policy-item">
-              <summary>🛡️ Seguridad del sitio web</summary>
-              <div class="policy-body">
-                <p>
-                  Validamos la información que ingresas en los formularios y mantenemos el
-                  sitio sobre HTTPS. Te recomendamos no compartir tus datos personales por
-                  canales distintos a los oficiales indicados en la sección de contacto.
-                </p>
-              </div>
-            </details>
-          </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto">
+                                <option value="">Selecciona una opción</option>
+                                <option value="producto">Información de un producto</option>
+                                <option value="pedido">Estado de mi pedido</option>
+                                <option value="devolucion">Devoluciones y cambios</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <span class="error-msg" id="error-asunto" role="alert"></span>
+                        </div>
 
-          <p class="policy-update text-center">Última actualización: octubre de 2026</p>
-        </div>
-      </section>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" maxlength="500" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                            <small class="char-counter" id="char-counter">0 / 500</small>
+                            <span class="error-msg" id="error-mensaje" role="alert"></span>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" id="privacidad" name="privacidad">
+                            <label for="privacidad">Acepto el <a href="#politicas">aviso de privacidad</a>.</label>
+                            <span class="error-msg" id="error-privacidad" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Enviar mensaje</button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="politicas" class="section bg-light">
+            <div class="container" id="contenedor-politicas">
+                <h2 class="section-title text-center">Políticas de Seguridad</h2>
+                <p class="section-subtitle text-center">Tu confianza es lo más importante. Así protegemos tu información y tus compras.</p>
+
+                <div class="policy-list">
+                    <details class="policy-item">
+                        <summary>🔒 Aviso de privacidad y protección de datos</summary>
+                        <div class="policy-body">
+                            <p>BioAura Orgánica recaba únicamente los datos necesarios (nombre, correo y mensaje) para atender tus solicitudes. No vendemos ni compartimos tu información con terceros sin tu consentimiento, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+                            <p>Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) escribiendo a <strong>privacidad@bioauraorganica.mx</strong>.</p>
+                        </div>
+                    </details>
+
+                    <details class="policy-item">
+                        <summary>🍪 Política de cookies</summary>
+                        <div class="policy-body">
+                            <p>Usamos cookies técnicas para que el sitio funcione correctamente y cookies analíticas para entender cómo se usa la página y mejorarla. Puedes desactivarlas desde la configuración de tu navegador sin afectar la navegación básica.</p>
+                        </div>
+                    </details>
+
+                    <details class="policy-item">
+                        <summary>💳 Pagos seguros</summary>
+                        <div class="policy-body">
+                            <p>Las transacciones se procesan mediante conexiones cifradas (HTTPS/TLS) a través de pasarelas de pago certificadas. BioAura no almacena los datos de tu tarjeta en sus servidores.</p>
+                        </div>
+                    </details>
+
+                    <details class="policy-item">
+                        <summary>📦 Envíos, devoluciones y garantía</summary>
+                        <div class="policy-body">
+                            <p>Los pedidos se envían en un plazo de 2 a 5 días hábiles. Si el producto llega dañado o no es lo que pediste, puedes solicitar cambio o reembolso dentro de los 10 días posteriores a la entrega, con el producto sin abrir (salvo defecto de fábrica).</p>
+                        </div>
+                    </details>
+
+                    <details class="policy-item">
+                        <summary>🛡️ Seguridad del sitio web</summary>
+                        <div class="policy-body">
+                            <p>Validamos la información que ingresas en los formularios y mantenemos el sitio sobre HTTPS. Te recomendamos no compartir tus datos personales por canales distintos a los oficiales indicados en la sección de contacto.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <p class="policy-update text-center">Última actualización: octubre de 2026</p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-      <p>&copy; 2026 BioAura Orgánica. Proyecto Académico Colaborativo.</p>
+        <p>&copy; 2026 BioAura Orgánica. Proyecto Académico Colaborativo.</p>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
